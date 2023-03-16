@@ -1,0 +1,28 @@
+alive += life[x - 1][y - 1];
+alive += life[x][y - 1];
+alive += life[x + 1][y - 1];
+alive += life[x - 1][y];
+alive += life[x + 1][y];
+alive += life[x - 1][y + 1];
+alive += life[x][y + 1];
+alive += life[x + 1][y + 1];
+
+
+alive += life[x - 1][y - 1];
+alive += life[x + 1][y + 1];
+alive += life[x - 1][y + 1];
+alive += life[x + 1][y - 1];
+alive += life[x][y - 1];
+alive += life[x][y + 1];
+alive += life[x - 1][y];
+alive += life[x + 1][y];
+
+
+alive += life[(x - 1) % xWidth][(y - 1) % yHeight];
+alive += life[x % xWidth][(y - 1) % yHeight];
+alive += life[(x + 1) % xWidth][(y - 1) % yHeight];
+alive += life[(x - 1) % xWidth][y % yHeight];
+alive += life[(x + 1) % xWidth][y % yHeight];
+alive += life[(x - 1) % xWidth][(y + 1) % yHeight];
+alive += life[x % xWidth][(y + 1) % yHeight];
+alive += life[(x + 1) % xWidth][(y + 1) % yHeight];
