@@ -36,7 +36,8 @@ public class LifeOfCells2 implements ActionListener {
         for (int x = 0; x < cols; x++) {
             for (int y = 0; y < rows; y++) {
                 if ((int) (Math.random() * nudDensity) == 0) {
-                    field[cols][rows] = true;
+                    field[x][y] = true;
+                    System.out.print("0 ");
                 }
             }
         }
@@ -51,6 +52,7 @@ public class LifeOfCells2 implements ActionListener {
     }
     public void actionPerformed(ActionEvent event) {
         frame.repaint();
+
     }
 
     public void paintComponent(Graphics g) {

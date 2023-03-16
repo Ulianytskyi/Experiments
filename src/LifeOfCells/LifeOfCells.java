@@ -10,9 +10,6 @@ public class LifeOfCells implements ActionListener {
     JPanel mainPanel, panel1;
     JButton bStart, bStop;
 
-
-
-
     public static void main(String[] args) {
         LifeOfCells game = new LifeOfCells();
         game.gui();
